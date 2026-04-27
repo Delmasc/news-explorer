@@ -1,0 +1,66 @@
+.search-form {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url("../../assets/georgia-de-lotz.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.search-form__title {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.search-form__subtitle {
+  max-width: 500px;
+  margin: 0 auto 32px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.search-form__form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form__bar {
+  display: flex;
+  align-items: stretch;
+  background: #ffffff;
+  border-radius: 100px;
+  overflow: hidden;
+  height: 64px;
+  max-width: 608px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.search-form__input {
+  flex: 1;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 100%;
+}
+
+.search-form__button {
+  height: 100%;
+  width: 160px;
+  border: none;
+  background: #2f71e5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 100px;
+  margin-left: -18px;
+  z-index: 1;
+}
+
+.search-form__button:hover {
+  background: #1e5edc;
+  opacity: 0.9;
+}

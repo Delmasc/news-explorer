@@ -1,0 +1,24 @@
+.cards {
+  padding: 40px;
+}
+
+.cards__title {
+  margin: 0 0 24px;
+  font-size: 30px;
+}
+
+.cards__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.cards__more-button {
+  display: block;
+  margin: 32px auto 0;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 100px;
+  background: #e8e8e8;
+  cursor: pointer;
+}

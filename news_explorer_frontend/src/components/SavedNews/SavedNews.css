@@ -1,0 +1,23 @@
+.saved-news {
+  padding: 40px;
+}
+
+.saved-news__subtitle {
+  margin: 0 0 8px;
+  color: #666;
+}
+
+.saved-news__title {
+  margin: 0 0 24px;
+  font-size: 30px;
+}
+
+.saved-news__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.saved-news__empty {
+  margin: 0;
+}

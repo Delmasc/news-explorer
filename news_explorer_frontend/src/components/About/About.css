@@ -1,0 +1,58 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding: 80px 104px;
+  background: #ffffff;
+  max-width: 1440px;
+}
+
+.about__image-placeholder {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #999;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.about__smile {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background-image: url(../../assets/smile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about__placeholder-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.about__content {
+  max-width: 600px;
+}
+
+.about__title {
+  margin: 0 0 24px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about__text {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 22px;
+}
