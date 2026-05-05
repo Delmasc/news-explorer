@@ -10,7 +10,6 @@ function SearchForm({ onSearch }) {
     if (!query.trim()) return;
 
     onSearch(query);
-    setQuery("");
 
     e.currentTarget.querySelector(".search-form__button").blur();
   };

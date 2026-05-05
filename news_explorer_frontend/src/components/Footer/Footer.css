@@ -9,9 +9,23 @@
 .footer__links {
   display: flex;
   gap: 20px;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: none;
 }
 
 .footer__text {
-  color: #b6bcbf;
   font-size: 14px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

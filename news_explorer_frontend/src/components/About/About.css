@@ -37,8 +37,9 @@
 
 .about__placeholder-text {
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 18px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .about__content {

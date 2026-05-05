@@ -1,24 +1,37 @@
 .cards {
-  padding: 40px;
+  .cards__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 16px;
+  }
 }
 
 .cards__title {
-  margin: 0 0 24px;
-  font-size: 30px;
+  margin: 0 0 64px;
+  color: #1a1b22;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 400;
 }
 
 .cards__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 16px;
 }
 
 .cards__more-button {
   display: block;
-  margin: 32px auto 0;
-  padding: 12px 24px;
+  margin: 64px auto 0;
+  width: 288px;
+  height: 64px;
   border: none;
-  border-radius: 100px;
-  background: #e8e8e8;
+  border-radius: 80px;
+  background-color: #fff;
   cursor: pointer;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }

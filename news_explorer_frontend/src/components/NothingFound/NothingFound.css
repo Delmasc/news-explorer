@@ -1,13 +1,33 @@
 .nothing-found {
-  padding: 40px;
+  background-color: #f5f6f7;
+  padding: 80px 16px;
   text-align: center;
 }
 
+.nothing-found__icon {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
+  background-image: url(../../assets/not-found_v1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .nothing-found__title {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
+  color: #1a1b22;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .nothing-found__text {
-  margin: 0;
-  color: #666;
+  max-width: 356px;
+  margin: 0 auto;
+  color: #b6bcbf;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }

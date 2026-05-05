@@ -1,27 +1,48 @@
 import NewsCard from "../NewsCard/NewsCard";
 import "./SavedNews.css";
 
-function SavedNews({ savedArticles }) {
-  const userName = "Delmas";
+function SavedNews({ savedArticles, onDeleteArticle, currentUser }) {
+  const keywords = savedArticles
+    .map((article) => article.keyword)
+    .filter(Boolean);
+
+  const uniqueKeywords = [...new Set(keywords)];
+
+  const displayedKeywords =
+    uniqueKeywords.length <= 2
+      ? uniqueKeywords.join(", ")
+      : `${uniqueKeywords[0]}, ${uniqueKeywords[1]}, and ${
+          uniqueKeywords.length - 2
+        } other`;
 
   return (
-    <section className="saved-news">
-      <p className="saved-news__subtitle">Saved articles</p>
+    <main className="saved-news">
+      <section className="saved-news__header">
+        <p className="saved-news__label">Saved articles</p>
 
-      <h1 className="saved-news__title">
-        {userName}, you have {savedArticles.length} saved articles
-      </h1>
+        <h1 className="saved-news__title">
+          {currentUser?.name || "User"}, you have {savedArticles.length} saved
+          articles
+        </h1>
 
-      <div className="saved-news__list">
-        {savedArticles.length > 0 ? (
-          savedArticles.map((article, index) => (
-            <NewsCard key={index} card={article} />
-          ))
-        ) : (
-          <p className="saved-news__empty">No saved articles yet</p>
-        )}
-      </div>
-    </section>
+        <p className="saved-news__keywords">
+          By keywords: <strong>{displayedKeywords}</strong>
+        </p>
+      </section>
+
+      <section className="saved-news__cards">
+        <div className="saved-news__card-list">
+          {savedArticles.map((article, index) => (
+            <NewsCard
+              key={index}
+              card={article}
+              isSavedPage={true}
+              onDeleteArticle={onDeleteArticle}
+            />
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
 

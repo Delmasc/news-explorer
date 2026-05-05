@@ -3,12 +3,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .navigation__logo {
   font-size: 20px;
   font-weight: 700;
   color: #ffff;
+  text-decoration: none;
 }
 
 .navigation__links {
@@ -58,4 +61,59 @@
   cursor: pointer;
   width: 152px;
   height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.navigation__button:hover {
+  cursor: pointer;
+}
+
+.navigation__logout-icon {
+  width: 12px;
+  height: 15px;
+  align-items: center;
+}
+
+.header_saved .navigation__logo {
+  color: #1a1b22;
+  background-color: transparent;
+}
+.header_saved .navigation__link {
+  color: #1a1b22;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: transparent;
+}
+
+.header_saved .navigation__link::after {
+  background-color: #1a1b22;
+  width: 100px;
+  bottom: -46px;
+}
+
+.header_saved .navigation__button {
+  color: #1a1b22;
+  border: 1px solid #1a1b22;
+  background-color: transparent;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.header_saved .navigation__logout-icon {
+  width: 12px;
+  height: 15px;
+  align-items: center;
+  color: black;
+  background-repeat: no-repeat;
+  background-position: center;
 }

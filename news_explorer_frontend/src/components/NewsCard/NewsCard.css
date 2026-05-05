@@ -1,40 +1,119 @@
 .card {
-  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card__image {
-  width: 100%;
-  height: 220px;
+  width: 400px;
+  height: 272px;
   object-fit: cover;
 }
 
 .card__content {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px 24px;
+  min-height: 304px;
+}
+
+.card__date {
+  margin: 0 0 12px;
+  color: #a6a7ab;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .card__title {
   margin: 0 0 12px;
-  font-size: 20px;
+  color: #1a1b22;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.card__source {
+  margin-top: auto;
+  color: #a6a7ab;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .card__text {
   margin: 0;
-  color: #555;
+  color: #1a1b22;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.card__save-button {
-  margin-top: 16px;
-  padding: 8px 16px;
+.card__icon-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
   border: none;
-  border-radius: 100px;
-  background: #2f71e5;
-  color: #ffff;
+  border-radius: 8px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
+  z-index: 2;
 }
 
-.card__save-button:hover {
-  background: #1e5edc;
+.card__bookmark-button {
+  background-image: url("../../assets/BM.svg");
+}
+
+.card__bookmark-button:hover {
+  background-image: url("../../assets/BM-Hover.svg");
+}
+
+.card__bookmark-button_saved {
+  background-image: url("../../assets/BM-HL.svg");
+}
+
+.card__delete-button {
+  background-image: url("../../assets/Delete-BTN.svg");
+}
+
+.card__keyword {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card__tooltip {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 72px;
+  z-index: 2;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card__bookmark-button:hover + .card__tooltip {
+  display: block;
 }
