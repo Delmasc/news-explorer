@@ -1,7 +1,6 @@
 .footer {
   margin-top: auto;
-  padding: 32px 104px 26px;
-
+  padding: 24px 104px 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,14 +9,24 @@
 .footer__links {
   display: flex;
   align-items: center;
+  gap: 24px;
+}
+
+.footer__link {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer__navigation {
+  display: flex;
+  align-items: center;
   gap: 40px;
-  text-decoration: none;
 }
 
 .footer__socials {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 
 .footer__icon-link {
@@ -42,7 +51,16 @@
 
 .footer__icon {
   width: 20px;
-  height: 20px;
+  height: 18px;
+}
+
+.footer__links,
+.footer__icons {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
