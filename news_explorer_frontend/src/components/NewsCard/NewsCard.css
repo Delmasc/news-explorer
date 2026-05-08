@@ -117,3 +117,54 @@
 .card__bookmark-button:hover + .card__tooltip {
   display: block;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .card__image {
+    height: 196px;
+    object-fit: cover;
+  }
+
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .card__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: 320px;
+    min-height: 536px;
+    margin: 0 auto;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 196px;
+  }
+
+  .card__content {
+    min-height: 340px;
+    padding: 16px;
+  }
+
+  .card__icon-button {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    max-width: 288px;
+  }
+  
+}

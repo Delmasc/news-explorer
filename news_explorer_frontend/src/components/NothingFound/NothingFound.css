@@ -31,3 +31,20 @@
   font-size: 18px;
   line-height: 24px;
 }
+
+@media screen and (max-width: 600px) {
+  .nothing-found {
+    padding: 64px 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nothing-found {
+    padding: 48px 16px;
+  }
+
+  .nothing-found__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -23,3 +23,19 @@
   box-sizing: border-box;
   padding: 20px 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .header_saved {
+    padding: 0;
+  }
+}
+
+/* @media screen and (max-width: 320px) {
+  .header {
+    padding: 12px 8px;
+  }
+
+  .header_saved {
+    padding: 0;
+  }
+} */

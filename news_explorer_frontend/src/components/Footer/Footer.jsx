@@ -18,7 +18,9 @@ function Footer() {
         >
           TripleTen
         </a>
+      </div>
 
+      <div className="footer__socials">
         <a
           className="footer__icon-link"
           href="https://github.com"
