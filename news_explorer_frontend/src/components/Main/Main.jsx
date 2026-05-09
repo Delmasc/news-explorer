@@ -8,6 +8,7 @@ import "./Main.css";
 function Main({
   isLoading,
   articles,
+  searchError,
   onSearch,
   hasSearched,
   onSaveArticle,
@@ -23,6 +24,7 @@ function Main({
       {!isLoading && articles.length > 0 && (
         <NewsCardList
           articles={articles}
+          searchError={searchError}
           onSaveArticle={onSaveArticle}
           isLoggedIn={isLoggedIn}
           savedArticles={savedArticles}

@@ -65,6 +65,15 @@
   opacity: 0.9;
 }
 
+.search-form__error {
+  display: block;
+  margin-top: 12px;
+  color: #ff0000;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
   .saved-news__header {
     padding: 24px 40px 32px;

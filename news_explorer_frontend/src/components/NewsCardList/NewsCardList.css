@@ -21,17 +21,43 @@
   height: 64px;
   border: none;
   border-radius: 80px;
-  background-color: #fff;
+  color: #1a1b22;
   cursor: pointer;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
+  line-height: 24px;
   font-weight: 500;
+  background-color: #e8e8e8;
+}
+
+.cards__more-button:hover {
+  cursor: pointer;
+}
+
+.cards__error {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cards {
+    padding: 40px;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(3, 224px);
+    gap: 8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .cards__list,
   .saved-news__card-list {
-    grid-template-columns: 2fr;
+    grid-template-columns: repeat(3, 224px);
+    gap: 8px;
   }
 }
 
@@ -48,53 +74,6 @@
 
   .cards__more-button {
     width: 100%;
-    height: 56px;
-    margin-top: 16px;
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .cards {
-    padding: 24px 8px;
-  }
-}
-
-.cards__title {
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.cards__list {
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.cards__more-button {
-  width: 100%;
-  height: 56px;
-  font-size: 14px;
-}
-
-@media screen and (max-width: 600px) {
-  .cards {
-    padding: 32px 16px;
-  }
-
-  .cards__title {
-    margin-bottom: 24px;
-    font-size: 30px;
-    line-height: 34px;
-  }
-
-  .cards__list {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .cards__more-button {
-    width: 100%;
-    max-width: 288px;
     height: 56px;
     margin-top: 16px;
     font-size: 16px;
@@ -109,5 +88,18 @@
   .cards__title {
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .cards__more-button {
+    width: 100%;
+    height: 56px;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+
+  .cards__list {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }

@@ -13,6 +13,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
     localStorage.getItem("loggedIn") === "true",
   );
+  const [searchError, setSearchError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [articles, setArticles] = useState([]);
   const [savedArticles, setSavedArticles] = useState(() => {
@@ -59,8 +60,9 @@ function App() {
 
   const handleSearch = (query) => {
     if (!query.trim()) {
-      setHasSearched(true);
+      setHasSearched(false);
       setArticles([]);
+      setSearchError("");
       return;
     }
 
@@ -68,6 +70,7 @@ function App() {
     setIsLoading(true);
     setHasSearched(true);
     setArticles([]);
+    setSearchError("");
 
     searchNews(query)
       .then((data) => {
@@ -76,6 +79,9 @@ function App() {
       .catch((err) => {
         console.error(err);
         setArticles([]);
+        setSearchError(
+          "Sorry, something went wrong during the request. Please try again later.",
+        );
       })
       .finally(() => {
         setIsLoading(false);
@@ -127,6 +133,7 @@ function App() {
             <Main
               isLoading={isLoading}
               articles={articles}
+              searchError={searchError}
               onSearch={handleSearch}
               hasSearched={hasSearched}
               onSaveArticle={handleSaveArticle}

@@ -16,7 +16,7 @@ export function searchNews(query) {
   const to = getDate();
 
   return fetch(
-    `${newsApiBaseUrl}?q=${query}&apiKey=${API_KEY}&from=${from}&to=${to}&pageSize=100`,
+    `${newsApiBaseUrl}?q=${encodeURIComponent(query)}&apiKey=${API_KEY}&from=${from}&to=${to}&pageSize=100`,
   ).then((res) => {
     if (!res.ok) {
       return Promise.reject(`Error: ${res.status}`);
