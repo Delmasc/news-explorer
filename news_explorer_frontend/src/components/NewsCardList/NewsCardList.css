@@ -88,7 +88,9 @@
   .cards__title {
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 6px;
   }
 
   .cards__more-button {
@@ -101,5 +103,14 @@
   .cards__list {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .cards__title,
+  .cards__search-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-top: 6px;
   }
 }

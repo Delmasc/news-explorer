@@ -30,7 +30,7 @@
 }
 
 .card__title {
-  margin: 0 0 12px;
+  margin: 64px 0 0;
   color: #1a1b22;
   font-family: "Roboto Slab", Georgia, serif;
   font-size: 18px;
@@ -39,7 +39,7 @@
 }
 
 .card__source {
-  margin-top: auto;
+  margin-top: 20px;
   color: #a6a7ab;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
@@ -166,5 +166,20 @@
   .card {
     max-width: 288px;
   }
-  
+
+  .card__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .card__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 22px;
+  }
+
+  .card__source {
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
 }

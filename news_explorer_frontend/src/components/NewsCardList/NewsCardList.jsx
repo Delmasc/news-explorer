@@ -19,7 +19,9 @@ function NewsCardList({
 
   return (
     <section className="cards">
-      <h2 className="cards__title">Search results</h2>
+      <h2 className="cards__title card__search-title" >
+        Search results
+      </h2>
 
       {searchError && (
         <p className="cards__error">
