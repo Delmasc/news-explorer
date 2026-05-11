@@ -17,26 +17,30 @@ function NewsCard({
     <article className="card">
       {isSavedPage && <span className="card__keyword">{card.keyword}</span>}
 
-      {!isSavedPage && !isLoggedIn && (
-        <span className="card__tooltip">Sign in to save articles</span>
-      )}
-
       {isSavedPage ? (
-        <button
-          className="card__icon-button card__delete-button"
-          type="button"
-          onClick={() => onDeleteArticle(card)}
-          aria-label="Delete article"
-        />
+        <div className="card__save-container">
+          <button
+            className="card__icon-button card__delete-button"
+            type="button"
+            onClick={() => onDeleteArticle(card)}
+            aria-label="Delete article"
+          />
+        </div>
       ) : (
-        <button
-          className={`card__icon-button card__bookmark-button ${
-            isSaved ? "card__bookmark-button_saved" : ""
-          }`}
-          type="button"
-          onClick={() => onSaveArticle(card)}
-          aria-label="Save article"
-        />
+        <div className="card__save-container">
+          {!isLoggedIn && (
+            <span className="card__tooltip">Sign in to save articles</span>
+          )}
+
+          <button
+            className={`card__icon-button card__bookmark-button ${
+              isSaved ? "card__bookmark-button_saved" : ""
+            }`}
+            type="button"
+            onClick={() => onSaveArticle(card)}
+            aria-label="Save article"
+          />
+        </div>
       )}
 
       <a

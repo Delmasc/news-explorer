@@ -16,12 +16,22 @@ export function searchNews(query) {
   const to = getDate();
 
   return fetch(
-    `${newsApiBaseUrl}?q=${encodeURIComponent(query)}&apiKey=${API_KEY}&from=${from}&to=${to}&pageSize=100`,
-  ).then((res) => {
-    if (!res.ok) {
-      return Promise.reject(`Error: ${res.status}`);
-    }
+    `${newsApiBaseUrl}?q=${encodeURIComponent(
+      query
+    )}&apiKey=${API_KEY}&from=${from}&to=${to}&pageSize=100`
+  )
+    .then((res) => {
+      if (!res.ok) {
+        return Promise.reject(`Error: ${res.status}`);
+      }
 
-    return res.json();
-  });
+      return res.json();
+    })
+    .then((data) => {
+      if (data.status !== "ok") {
+        return Promise.reject(data.message || "News API error");
+      }
+
+      return data;
+    });
 }

@@ -55,9 +55,11 @@ function Navigation({
 
         {isLoggedIn ? (
           <>
-            <NavLink to="/saved-news" className={getLinkClassName}>
-              Saved Articles
-            </NavLink>
+            {!isSavedNewsPage && (
+              <NavLink to="/saved-news" className={getLinkClassName}>
+                Saved Articles
+              </NavLink>
+            )}
 
             <button
               className="navigation__button"
