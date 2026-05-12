@@ -7,6 +7,7 @@ import SavedNews from "../SavedNews/SavedNews";
 import Footer from "../Footer/Footer";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
+import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 import "./App.css";
 
 function App() {
@@ -146,11 +147,13 @@ function App() {
         <Route
           path="/saved-news"
           element={
-            <SavedNews
-              savedArticles={savedArticles}
-              onDeleteArticle={handleDeleteArticle}
-              currentUser={currentUser}
-            />
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
+              <SavedNews
+                savedArticles={savedArticles}
+                onDeleteArticle={handleDeleteArticle}
+                currentUser={currentUser}
+              />
+            </ProtectedRoute>
           }
         />
       </Routes>
