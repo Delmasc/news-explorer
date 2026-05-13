@@ -4,7 +4,7 @@ Pull request in - (frontend-stage-1) - https://github.com/Delmasc/news-explorer/
 
 link for Video - https://www.loom.com/share/41b8ef22a9194267ac5fc432e9839e58
 
-[View deployed app](https://delmasc.github.io/news-explorer/)
+[View deployed app](https://github.com/Delmasc/news-explorer)
 
 Main tools and technologies you used
 
