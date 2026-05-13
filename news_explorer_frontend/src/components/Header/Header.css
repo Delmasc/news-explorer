@@ -7,14 +7,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* .header_saved {
-  background-color: #fff;
-  border-bottom: 1px solid rgba(209, 210, 214, 1);
-  padding: 0 104px;
-  color: black;
-  position: relative;
-} */
-
 .header_saved {
   position: relative;
   background-color: #fff;
@@ -29,13 +21,3 @@
     padding: 0;
   }
 }
-
-/* @media screen and (max-width: 320px) {
-  .header {
-    padding: 12px 8px;
-  }
-
-  .header_saved {
-    padding: 0;
-  }
-} */
