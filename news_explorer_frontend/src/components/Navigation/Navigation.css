@@ -78,6 +78,10 @@
   align-items: center;
 }
 
+.navigation__logout-icon:hover {
+  cursor: pointer;
+}
+
 .navigation_saved .navigation__link::after {
   background-color: #1a1b22;
   width: 100%;
