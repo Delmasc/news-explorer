@@ -4,6 +4,8 @@ Pull request - https://github.com/Delmasc/news-explorer/pull/1
 
 Pull request in - (frontend-stage-1) - https://github.com/Delmasc/news-explorer/tree/frontend-stage-1 / frontend-stage-1
 
+[View deployed app](https://delmasc.github.io/news-explorer/)
+
 Main tools and technologies you used
 
 “I built a responsive full-stack style React news application using Vite, React Router, REST APIs, localStorage authentication simulation, and responsive CSS layouts. The app integrates with the News API to fetch live articles, supports saving articles, conditional rendering, loading states, and mobile-first responsive design.”
