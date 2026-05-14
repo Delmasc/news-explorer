@@ -37,5 +37,4 @@ Pull request in - (frontend-stage-1) - https://github.com/Delmasc/news-explorer/
 
 http://localhost:5173/
 
-
 https://github.com/Delmasc/news-explorer.git

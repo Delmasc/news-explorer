@@ -1,4 +1,4 @@
-Deploy app - https://delmasc.github.io/news-explorer/
+Deploy app -  https://delmasc.github.io/news-explorer/
 
 Pull request - https://github.com/Delmasc/news-explorer/pull/1
 
