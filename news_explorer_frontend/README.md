@@ -1,10 +1,10 @@
-link for Video - https://www.loom.com/share/41b8ef22a9194267ac5fc432e9839e58
+Deploy app -  https://delmasc.github.io/news-explorer/
 
 Pull request - https://github.com/Delmasc/news-explorer/pull/1
 
 Pull request in - (frontend-stage-1) - https://github.com/Delmasc/news-explorer/tree/frontend-stage-1 / frontend-stage-1
 
-[View deployed app](https://delmasc.github.io/news-explorer/)
+link for Video - https://www.loom.com/share/41b8ef22a9194267ac5fc432e9839e58
 
 Main tools and technologies you used
 
@@ -36,5 +36,3 @@ Responsive CSS was one of the hardest parts because small layout changes could a
 Pull request in - (frontend-stage-1) - https://github.com/Delmasc/news-explorer/tree/frontend-stage-1 / frontend-stage-1
 
 http://localhost:5173/
-
-https://github.com/Delmasc/news-explorer.git

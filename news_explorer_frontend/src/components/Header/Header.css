@@ -1,0 +1,23 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header_saved {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #d1d2d6;
+  padding: 0 104px;
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .header_saved {
+    padding: 0;
+  }
+}
