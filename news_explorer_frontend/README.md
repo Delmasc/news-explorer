@@ -1,10 +1,10 @@
+Deploy app - https://github.com/Delmasc/news-explorer
+
 Pull request - https://github.com/Delmasc/news-explorer/pull/1
 
 Pull request in - (frontend-stage-1) - https://github.com/Delmasc/news-explorer/tree/frontend-stage-1 / frontend-stage-1
 
 link for Video - https://www.loom.com/share/41b8ef22a9194267ac5fc432e9839e58
-
-[View deployed app](https://github.com/Delmasc/news-explorer)
 
 Main tools and technologies you used
 
