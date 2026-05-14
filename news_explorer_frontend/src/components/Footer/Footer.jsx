@@ -7,7 +7,7 @@ function Footer() {
 
       <div className="footer__navigation">
         <div className="footer__links">
-          <a className="footer__link" href="/">
+          <a className="footer__link" href="/news-explorer/">
             Home
           </a>
 
@@ -28,7 +28,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/github.svg" alt="GitHub" className="footer__icon" />
+            <img src="./github.svg" alt="GitHub" className="footer__icon" />
           </a>
 
           <a
@@ -37,7 +37,11 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/linked-in.svg" alt="LinkedIn" className="footer__icon" />
+            <img
+              src="./linked-in.svg"
+              alt="LinkedIn"
+              className="footer__icon"
+            />
           </a>
         </div>
       </div>
