@@ -36,3 +36,6 @@ Responsive CSS was one of the hardest parts because small layout changes could a
 Pull request in - (frontend-stage-1) - https://github.com/Delmasc/news-explorer/tree/frontend-stage-1 / frontend-stage-1
 
 http://localhost:5173/
+
+
+https://github.com/Delmasc/news-explorer.git
